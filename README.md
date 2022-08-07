@@ -5,10 +5,10 @@
 L’application permet à l'assistant d’initialiser les médicaments, la fréquence… 
 Le patient est notifié pour prendre ces médicament, et suivre son état 
 De plus l’application porte des informations comme :
-  localisation
-  contact d’urgence
-  Type de sang
-  contact de l’assistant
+  localisation,
+  contact d’urgence,
+  Type de sang,
+  contact de l’assistant,
   adresse
 
 ##Interfaces
