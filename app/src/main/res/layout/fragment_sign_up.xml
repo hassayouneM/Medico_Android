@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up">
+
+<EditText
+    android:id="@+id/confirm_password_signup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
+    android:ems="10"
+    android:hint="Confirm Password"
+    android:inputType="textPassword"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/password_signup" />
+
+<EditText
+android:id="@+id/userName_signup"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="40dp"
+android:ems="10"
+android:hint="User Name"
+android:inputType="textPersonName"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+android:id="@+id/password_signup"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
+android:ems="10"
+android:hint="Password"
+android:inputType="textPassword"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/userName_signup" />
+
+<RadioGroup
+android:id="@+id/radioGroup"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:gravity="center"
+android:orientation="horizontal"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/confirm_password_signup">
+
+<RadioButton
+    android:id="@+id/Patient_radio"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:checked="true"
+    android:text="Patient" />
+
+<RadioButton
+    android:id="@+id/Assistant_radio"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Assistant" />
+</RadioGroup>
+
+<Button
+android:id="@+id/btn_signup_frag1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="30dp"
+android:background="@drawable/signup_button"
+    android:text="Sign Up"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
